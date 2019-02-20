@@ -16,6 +16,7 @@ public class ConsultarMongo {
 		/* Buscar todos los alumno */
 		FindIterable busquedaTodos = alumnos.find();
 		/* Buscar todos los alumnos llamados "Ana" */
+		
 		FindIterable busquedaAna = alumnos.find(eq("nombre", "Ana"));
 		/* Buscar todos los alumnos que han aprobado */
 		FindIterable busquedaAprobados = alumnos.find(lte("nota", 50));
